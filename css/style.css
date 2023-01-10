@@ -17,23 +17,19 @@
   }
   
   .booksCont {
-    width: 60%;
+    width: 80%;
     margin: 20px auto;
-    border: 1px solid rgb(39, 52, 168);
   }
   
   .book {
     padding: 0 40px;
     padding-top: 10px;
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row;
+    border: 1px solid rgb(27, 26, 26);
+    gap: 19px;
   }
   
-  .bookTitle {
-    font-size: 1.1em;
-    font-weight: bold;
-  }
   
   .bookAuthor {
     font-size: 0.9em;
@@ -42,10 +38,11 @@
   
   .removeBtn {
     width: 50%;
-    margin: 0 auto;
+    margin: 8px auto;
     padding: 5px 0;
     font-size: 0.9em;
     font-weight: bold;
+    margin-top: -7px;
   }
   
   .addBook {
@@ -66,6 +63,12 @@
     padding: 5px 0;
     font-size: 0.9em;
     font-weight: bold;
+  }
+
+  hr{
+    width: 50%;
+    margin-left: 100px;
+    background-color: black;
   }
 
 ::placeholder {
