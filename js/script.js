@@ -12,10 +12,10 @@ class AwesomeBook {
     bookDiv.className = 'book';
     bookDiv.id = `book-${book.id}`;
     const bookElement = `
-        <h4 class="bookTitle">${book.title}</h4>
+        <h4 class="bookTitle">"${book.title}"</h4>
+        <p class="bookAuthor">by</p>
         <p class="bookAuthor">${book.author}</p>
         <button class="removeBtn">Remove</button>
-        <hr>
       `;
     bookDiv.innerHTML += bookElement;
     bookDiv.querySelector('.removeBtn').addEventListener('click', (event) => {
