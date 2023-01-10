@@ -118,6 +118,10 @@ To run the project, execute the following command:
 - GitHub: [@zewdu444](https://github.com/zewdu444)
 - Twitter: [@zewdu444](https://twitter.com/zewdu444)
 - LinkedIn: [zewdu-erkyhun](https://www.linkedin.com/in/zewdu-erkyhun-081378b3/)
+
+👤 **Abdimulhin Adan**
+
+- GitHub: [@AbdimulhinYussuf3675](https://github.com/AbdimulhinYussuf3675)
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
