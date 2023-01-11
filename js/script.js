@@ -123,3 +123,13 @@ document.querySelectorAll('button').forEach((occurence) => {
 const date = new Date();
 const localdate = date.toLocaleString();
 currentDate.innerHTML = localdate;
+
+// clear inputfield
+const btn = document.getElementById('addbtn');
+addBtn.addEventListener('click', function handleClick(event) {
+  event.preventDefault();
+  const clearAuthor = document.getElementById('author');
+  const clearTitle = document.getElementById('title');
+  clearAuthor.value = '';
+  clearTitle.value = '';
+})
