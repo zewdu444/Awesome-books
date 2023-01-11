@@ -97,6 +97,7 @@ nav {
   flex-direction: row;
   list-style: none;
   padding-top: 5px;
+  gap: 15px;
 }
 
 .navlist > li > button {
