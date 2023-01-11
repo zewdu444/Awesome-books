@@ -125,7 +125,6 @@ const localdate = date.toLocaleString();
 currentDate.innerHTML = localdate;
 
 // clear inputfield
-const btn = document.getElementById('addbtn');
 addBtn.addEventListener('click', function handleClick(event) {
   event.preventDefault();
   const clearAuthor = document.getElementById('author');
