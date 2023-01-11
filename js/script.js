@@ -60,10 +60,71 @@ class AwesomeBook {
       });
     }
     const addBtn = document.getElementById('addBtn');
-    addBtn.addEventListener('click', () => {
+    addBtn.addEventListener('click', (event) => {
       this.storeInputData();
+      event.preventDefault();
+      const clearAuthor = document.getElementById('author');
+      const clearTitle = document.getElementById('title');
+      clearAuthor.value = '';
+      clearTitle.value = '';
     });
   }
 }
 const newbook = new AwesomeBook();
 newbook.initLoad(newbook.booksList);
+// navigation starts here
+const list = document.getElementById('list');
+const addNew = document.getElementById('addnew');
+const contact = document.getElementById('contact');
+const listDisplay = document.querySelector('.list');
+const addNewDisplay = document.querySelector('.addBook');
+const contactDisplay = document.querySelector('.contact');
+const currentDate = document.querySelector('.currentdate');
+
+function selectNavigation(selection) {
+  switch (selection) {
+    case 'addnew':
+    {
+      listDisplay.style.display = 'none';
+      contactDisplay.style.display = 'none';
+      addNewDisplay.style.display = 'flex';
+      addNew.style.color = '#4765c5';
+      list.style.color = 'black';
+      contact.style.color = 'black';
+      break;
+    }
+    case 'list':
+    {
+      listDisplay.style.display = 'block';
+      contactDisplay.style.display = 'none';
+      addNewDisplay.style.display = 'none';
+      addNew.style.color = 'black';
+      list.style.color = '#4765c5';
+      contact.style.color = 'black';
+      break;
+    }
+
+    case 'contact':
+    {
+      listDisplay.style.display = 'none';
+      contactDisplay.style.display = 'block';
+      addNewDisplay.style.display = 'none';
+      addNew.style.color = 'black';
+      list.style.color = 'black';
+      contact.style.color = '#4765c5';
+      break;
+    }
+
+    default:
+      break;
+  }
+}
+document.querySelectorAll('button').forEach((occurence) => {
+  const id = occurence.getAttribute('id');
+  occurence.addEventListener('click', () => {
+    selectNavigation(id);
+  });
+});
+const date = new Date();
+const localdate = date.toLocaleString();
+currentDate.innerHTML = localdate;
